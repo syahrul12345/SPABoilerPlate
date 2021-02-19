@@ -1,0 +1,9 @@
+version: "3"
+services:
+  beam:
+    build: "."
+    container_name: beam
+    ports:
+      - "8000:8000"
+    environment:
+      - GIN_MODE=release
